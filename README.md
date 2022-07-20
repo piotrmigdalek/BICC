@@ -1,4 +1,4 @@
-# BICC
+# Business Inteligence Case Challenge
 Goal of the competition was to forecast KPI of the monthly revenue from retail sales of electricity. My work was based on custom ensemble method prepared in <tt>R</tt> using <tt>forecast</tt> and <tt>prophet</tt> libraries. Combination consisted of:
 Model | Description
 -------------| -------------
