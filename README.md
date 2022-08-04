@@ -8,6 +8,6 @@ ETS + STL | ETS(M, N, N) model (simple exponential smoothing with multiplicative
 NNAR | NNAR(2,1,3)[12] model which is ANN iniciated with autoregression inputs; network has 3-3-1 structure with 3 neurons in the hidden layer.
 Prophet | Monthly state space model with multiplicative seasonality estimated using bayesian method for changepoint detection and trend estimation.
 
-Forecast from different models were aggragated by simple arithmetic average, which often grants the best results when it comes to forecast accuracy. That was the case in my work, which scored lowest root of theil's criterion (best accuracy); on top of that it was highly scored from the methodological standpoint, which added up to final best result in the competition.
+Forecasts from different models were aggragated by simple arithmetic average, which often grants the best results (as a aggregator) when it comes to forecast accuracy. This simple trick provides a little bit of bias to composition of models prone to overfitting, which often results in better forecast accuracy. That was the case in my work, which scored lowest root of theil's criterion (best accuracy); on top of that it was highly viewed from the methodological standpoint, which added up to final best result in the competition.
 
 File *BICC.pdf* is original competition submission (in Polish), *BICC.R* includes source code and *Data_BICC.csv* features competition data.
