@@ -3,8 +3,7 @@ Goal of the competition was to forecast KPI of the monthly revenue from retail s
 Model | Description
 -------------| -------------
 Dynamic harmonic regression | Regression model constructed using dummy fourier variables (in order to model seasonality) with (non-seasonal) ARIMA errors.
-ETS | ETS(M, Ad, M) model with multiplicative errors and seasonality with additive
- damped trend chosen by minimalizing AICc criterion.
+ETS | ETS(M, Ad, M) model with multiplicative errors and seasonality with additive damped trend chosen by minimalizing AICc criterion.
 ETS + STL | ETS(M, N, N) model (simple exponential smoothing with multiplicative errors) with extrapolated trend and seasonality estimated by STL.
 NNAR | NNAR(2,1,3)[12] model which is ANN iniciated with autoregression inputs; network has 3-3-1 structure with 3 neurons in the hidden layer.
 Prophet | Monthly state space model with multiplicative seasonality estimated using bayesian method for changepoint detection and trend estimation.
